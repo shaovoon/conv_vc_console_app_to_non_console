@@ -1,6 +1,6 @@
 # C++: Convert Console Project to Non-Console
 
-This tip is written in response to the [Q&A question](https://www.codeproject.com/Questions/5376312/How-do-I-create-a-Cplusplus-console-program-that-d" target="_blank) posted by [Eduardo Quintana](https://www.codeproject.com/script/Membership/View.aspx?mid=122721" target="_blank) from Brazil. I encountered this same problem many years back when I downloaded an OpenGL tutorial that launched a console window before opening an OpenGL window. Having a console is extremely useful to log the messages to screen for troubleshooting but as a final product, only the OpenGL window should be shown to the user. In this tip, I&#39;ll show you how to convert a Visual C++ Console project not to show the console screen.
+This tip is written in response to the [Q&A question](https://www.codeproject.com/Questions/5376312/How-do-I-create-a-Cplusplus-console-program-that-d) posted by [Eduardo Quintana](https://www.codeproject.com/script/Membership/View.aspx?mid=122721) from Brazil. I encountered this same problem many years back when I downloaded an OpenGL tutorial that launched a console window before opening an OpenGL window. Having a console is extremely useful to log the messages to screen for troubleshooting but as a final product, only the OpenGL window should be shown to the user. In this tip, I&#39;ll show you how to convert a Visual C++ Console project not to show the console screen.
 
 Firstly, to open __Project Properties__ dialog, right-click on the project in the Solution Explorer and select __Properties__ at the bottom of the pop-up menu or you can type __Alt+Enter__ key. Select the __Linker__->__System__ on the tree on the left panel. Then, change the __Configuration__ dropdown to __All Configurations__ and __Platform__ dropdown to __All Platforms__. Finally, change the Subsystem from `Console (/SUBSYSTEM:CONSOLE)` to `Windows (/SUBSYSTEM:WINDOWS)` as shown on the screenshot.
 
@@ -116,7 +116,7 @@ int __stdcall WinMain(
 
 ## Alternate Solutions: Hide the Console or Make a Window Service
 
-In the article comment section, Stacy Dudovitz gives two solutions: either move the console window offscreen and hide it or make your application a Windows service. Marius Bancila has written an excellent Windows service article: [Interact with Windows Services in C++](https://www.codeproject.com/Articles/1098263/Interact-with-Windows-Services-in-Cplusplus" target="_blank); You can use it as a guide to write your service.
+In the article comment section, Stacy Dudovitz gives two solutions: either move the console window offscreen and hide it or make your application a Windows service. Marius Bancila has written an excellent Windows service article: [Interact with Windows Services in C++](https://www.codeproject.com/Articles/1098263/Interact-with-Windows-Services-in-Cplusplus); You can use it as a guide to write your service.
 
 ```Cpp
 #include <Windows.h>
