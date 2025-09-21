@@ -4,11 +4,9 @@ This tip is written in response to the [Q&A question](https://www.codeproject.co
 
 Firstly, to open __Project Properties__ dialog, right-click on the project in the Solution Explorer and select __Properties__ at the bottom of the pop-up menu or you can type __Alt+Enter__ key. Select the __Linker__->__System__ on the tree on the left panel. Then, change the __Configuration__ dropdown to __All Configurations__ and __Platform__ dropdown to __All Platforms__. Finally, change the Subsystem from `Console (/SUBSYSTEM:CONSOLE)` to `Windows (/SUBSYSTEM:WINDOWS)` as shown on the screenshot.
 
-
-	* __Configuration__: All Configurations
-	* __Platform__: All Platforms
-	* __Subsystem__: Windows (_/SUBSYSTEM:WINDOWS_)
-
+* __Configuration__: All Configurations
+* __Platform__: All Platforms
+* __Subsystem__: Windows (_/SUBSYSTEM:WINDOWS_)
 
 ![winsubsystem.png](/images/winsubsystem.png)
 
